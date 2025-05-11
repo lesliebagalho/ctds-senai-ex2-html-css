@@ -1,4 +1,8 @@
-# Orientações
+# Atividade do Curso Técnico de Desenvovimento de Sistemas
+## Módulo HTML e CSS
+### Exercício 2
+
+## Orientações
 
 ### body
 1. background-color: #f4f4f4;
