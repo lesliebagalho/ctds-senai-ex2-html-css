@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cor Background */
+    --bck-body: #f4f4f4;
+    --bck-header: #2c3e50;
+    --bck-card: #fff;
+    --bck-button: #f1c40f;
+    --bck-footer: #2c3e50;
+
+    /* Cor Fonte */
+    --color-body: #2c3e50;
+    --color-secao: #2c3e50;
+    --color-logo: #f1c40f;
+    --color-li-a: #f1c40f;
+    --color-depoimento: #2c3e50;
+    --color-footer: #f1c40f;
+    --color-button: #2c3e50;
+}
+
+body {
+    background-color: var(--bck-body);
+    color: var(--color-body);
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+header {
+    background-color: var(--bck-header);
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: var(--color-logo);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.menu li {
+    font-size: 20px;
+}
+
+.menu li a {
+    color: var(--color-li-a);
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Seção */
+.secao {
+    margin: 50px 0;
+}
+
+.secao h1,
+.secao h2 {
+    color: var(--color-secao);
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.secao p {
+    text-align: center;
+}
+
+/* Card */
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.card {
+    background-color: var(--bck-card);
+    border: 1px solid #ccc;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    padding-bottom: 10px;
+}
+
+.card p {
+    line-height: 2rem;
+}
+
+/* Button */
+.card button {
+    border: none;
+    background-color: var(--bck-button);
+    color: var(--color-button);
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.card button:hover {
+    background-color: #d4ac0d;
+}
+
+/* Depoimentos */
+.depoimentos {
+    background-color: white;
+    width: 98%;
+    padding: 40px 0;
+    margin: auto;
+}
+
+.depoimentos h2 {
+    text-align: center;
+}
+
+.depoimento-lista {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.depoimento {
+    background-color: #ECF0F1;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.depoimento img {
+    border-radius: 100px;
+    width: 80px;
+}
+
+.depoimento p {
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.depoimento strong {
+    color: #2c3e50;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bck-footer);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    gap: 32px;
+    padding: 50px 0;
+}
+
+footer a {
+    color: var(--color-footer);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.rede-social {
+    text-align: center;
+}
+
+/* Média Querie */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .card, .depoimento{
+        width: 80%;
+    }
+
+    .produtos,
+    .depoimento-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
